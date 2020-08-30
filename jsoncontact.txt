@@ -1,0 +1,11 @@
+{"idDocument":"13090757","firstName":"Ruben","middleName":"Alberto","lastName":"Pulido","birthdate":"2020-02-02","phonePersonal":"44080927","phoneWork":"44080927","email":"rubenpul@gmail.com","idCountry":"US","idState":"DE","idCity":"3004373","street":"reverendo padre ansaldo","number":"651","zipCode":"1744","companyName":"Kin+Carta","imageProfile":"null"}
+
+{"idDocument":"18451818","firstName":"Mariela","middleName":"Joselyn","lastName":"Silva","birthdate":"2020-02-02","phonePersonal":"22998847","phoneWork":"22998847","email":"sb.mariela86@gmail.com","idCountry":"US","idState":"MD","idCity":"3099546","street":"reverendo padre ansaldo","number":"651","zipCode":"1744","companyName":"Kin+Carta","imageProfile":"null"}
+
+
+{"idDocument":"13090757","firstName":"Ruben","middleName":"Alberto","lastName":"Pulido","birthdate":"2020-02-02","phonePersonal":"44080927","phoneWork":"44080927","email":"rubenpul@gmail.com","idCountry":"US","idState":"DE","idCity":"3004373","street":"reverendo padre ansaldo","number":"651","zipCode":"1744","companyName":"Kin+Carta","imageProfile":"null"}
+
+
+{"phonePersonal":"44080927","phoneWork":"44080927","email":"rubenpul@gmail.com"}
+
+{"idCountry":"1","idState":"1","idCity":"1"}

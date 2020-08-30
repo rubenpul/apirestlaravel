@@ -1,0 +1,387 @@
+{
+	"info": {
+		"_postman_id": "396d2a40-09f6-4abd-94db-f609caed61be",
+		"name": "contact",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image0",
+							"type": "file",
+							"src": "/C:/Users/desarrollo/Downloads/descarga (1).jpg"
+						},
+						{
+							"key": "json",
+							"value": "{\"firstName\":\"Mariela\",\"middleName\":\"Joselyn\",\"lastName\":\"Silva\",\"birthdate\":\"2020-02-02\",\"phonePersonal\":\"22998847\",\"phoneWork\":\"22998847\",\"email\":\"sb.mariela86@gmail.com\",\"idCountry\":\"US\",\"idState\":\"MD\",\"idCity\":\"3099546\",\"street\":\"reverendo padre ansaldo\",\"number\":\"651\",\"zipCode\":\"1744\",\"companyName\":\"Kin+Carta\",\"imageProfile\":\"none\"}\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Contact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "json",
+							"value": "{\"idDocument\":\"1\",\"firstName\":\"Ruben\",\"middleName\":\"Alberto\",\"lastName\":\"Pulido\",\"birthdate\":\"2020-02-02\",\"phonePersonal\":\"44080927\",\"phoneWork\":\"44080927\",\"email\":\"rubenpul@gmail.com\",\"idCountry\":\"US\",\"idState\":\"DE\",\"idCity\":\"3004373\",\"street\":\"reverendo padre ansaldo\",\"number\":\"651\",\"zipCode\":\"1744\",\"companyName\":\"Kin+Carta\",\"imageProfile\":\"none\"}\n{\"id\":\"1\",\"firstName\":\"Ruben\",\"middleName\":\"Alberto\",\"lastName\":\"Pulido\",\"birthdate\":\"2020-02-02\",\"phonePersonal\":\"44080927\",\"phoneWork\":\"44080927\",\"email\":\"rubenpul@gmail.com\",\"idCountry\":\"US\",\"idState\":\"DE\",\"idCity\":\"3004373\",\"street\":\"reverendo padre ansaldo\",\"number\":\"651\",\"zipCode\":\"1744\",\"companyName\":\"Kin+Carta\",\"imageProfile\":\"none\"}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"update"
+					],
+					"query": [
+						{
+							"key": "json",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "id_update",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/delete/?1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"delete",
+						""
+					],
+					"query": [
+						{
+							"key": "1",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uploadImageProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Image Profile Contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/avatar/1595709800descarga.jfif",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"avatar",
+						"1595709800descarga.jfif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/detail/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Contacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Contact by Email or Phone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/emailphone?json={\"phonePersonal\":\"44080927\",\"phoneWork\":\"44080927\",\"email\":\"rubenpul@gmail.com\"}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"emailphone"
+					],
+					"query": [
+						{
+							"key": "json",
+							"value": "{\"phonePersonal\":\"44080927\",\"phoneWork\":\"44080927\",\"email\":\"rubenpul@gmail.com\"}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Contact by State or City",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/statecity?json={\"idCountry\":\"1\",\"idState\":\"1\",\"idCity\":\"1\"}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"statecity"
+					],
+					"query": [
+						{
+							"key": "json",
+							"value": "{\"idCountry\":\"1\",\"idState\":\"1\",\"idCity\":\"1\"}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get States",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/states/US",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"states",
+						"US"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/cities/US/DE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"cities",
+						"US",
+						"DE"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Image Profile Contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/avatar/1595709800descarga.jfif",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"avatar",
+						"1595709800descarga.jfif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Image Profile Contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "imageNew",
+							"type": "file",
+							"src": "/C:/Users/desarrollo/Downloads/IMG_3219.jpg"
+						},
+						{
+							"key": "imageOld",
+							"value": "1595799162descarga (1).jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api-rest-contact/public/contact/updateimage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-rest-contact",
+						"public",
+						"contact",
+						"updateimage"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
